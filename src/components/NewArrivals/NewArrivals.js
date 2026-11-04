@@ -25,11 +25,7 @@ function NewArrivals() {
       image: "🌷",
     },
   ];
-  const Posts = [
-    { id: 1, title: "title one", desc: "desc one" },
-    { id: 2, title: "title two", desc: "desc two" },
-    { id: 3, title: "title three", desc: "desc three" },
-  ];
+  
   return (
     <section className="new-arrivals">
       <div className="new-arrivals-header">

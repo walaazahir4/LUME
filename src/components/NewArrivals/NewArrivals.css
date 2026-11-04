@@ -69,13 +69,15 @@
   overflow: hidden;
 }
 
-.new-product-image > span:first-child {
-  font-size: 100px;
+.new-product-image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
   transition: 0.5s ease;
 }
 
 .new-product-card:hover
-.new-product-image > span:first-child {
+.new-product-image > img {
   transform: scale(1.15);
 }
 

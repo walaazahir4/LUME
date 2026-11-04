@@ -5,28 +5,28 @@ const products = [
     name: "Glow Serum",
     category: "Skincare",
     price: 28,
-    image: "✨",
+    image: "/images/serum.png",
   },
   {
     id: 2,
     name: "Velvet Lipstick",
     category: "Makeup",
     price: 22,
-    image: "💄",
+    image: "/images/lipstick.png",
   },
   {
     id: 3,
     name: "Hydrating Cream",
     category: "Skincare",
     price: 32,
-    image: "🧴",
+    image: "/images/cream.png",
   },
   {
     id: 4,
     name: "Rose Perfume",
     category: "Fragrance",
     price: 45,
-    image: "🌹",
+    image: "/images/perfume.png",
   },
 ];
 function Cat(){
@@ -48,7 +48,7 @@ function Cat(){
           <div className="header-product-card" key={product.id}>
             
             <div className="product-image">
-              <span>{product.image}</span>
+              <img src={product.image} alt={product.name} />
 
               <button className="wishlist">
                 ♡

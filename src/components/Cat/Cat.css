@@ -83,13 +83,14 @@
   overflow: hidden;
 }
 
-.product-image > span {
-  font-size: 90px;
-
+.product-image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
   transition: 0.5s ease;
 }
 
-.header-product-card:hover .product-image > span {
+.header-product-card:hover .product-image > img {
   transform: scale(1.15) rotate(5deg);
 }
 

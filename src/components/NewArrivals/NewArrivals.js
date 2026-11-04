@@ -8,21 +8,21 @@ function NewArrivals() {
       name: "Silk Face Oil",
       category: "Skincare",
       price: 35,
-      image: "🌸",
+      image: "/images/faceOil.png",
     },
     {
       id: 2,
       name: "Nude Blush",
       category: "Makeup",
       price: 24,
-      image: "🩷",
+      image: "/images/blusher.png",
     },
     {
       id: 3,
       name: "Vanilla Mist",
       category: "Fragrance",
       price: 30,
-      image: "🌷",
+      image: "/images/mist.png",
     },
   ];
   
@@ -43,7 +43,7 @@ function NewArrivals() {
         {newProducts.map((product) => (
           <div className="new-product-card" key={product.id}>
             <div className="new-product-image">
-              <span>{product.image}</span>
+              <img src={product.image} alt={product.name} />
 
               <span className="new-badge">NEW</span>
             </div>

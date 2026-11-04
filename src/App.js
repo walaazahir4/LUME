@@ -6,8 +6,16 @@ import NewArrivals from "./components/NewArrivals/NewArrivals.js";
 import About from "./components/About/About.js";
 import Newsletter from "./components/Newsletter/Newsletter.js";
 import Footer from "./components/Footer/Footer.js";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+  const audio = new Audio("/audio/sparkle.mp3"); 
+  audio.volume = 0.25;
+  audio.play().catch((error) => {
+  console.log("Audio playback failed:", error);
+});
+}, []);
   return (
     <>
       <section id="home">

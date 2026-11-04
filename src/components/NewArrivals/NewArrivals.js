@@ -1,14 +1,7 @@
 import "./NewArrivals.css";
-import Crud from "../shared/Crud/Crud";
 
 function NewArrivals() {
-  const sayHello = () => {
-    return "Hello Lolo";
-  };
-
-  const sayEngez = () => {
-    return "Hello Engez";
-  };
+  
   const newProducts = [
     {
       id: 1,
@@ -74,9 +67,6 @@ function NewArrivals() {
         ))}
       </div>
 
-      <div>
-        <Crud />
-      </div>
     </section>
   );
 }

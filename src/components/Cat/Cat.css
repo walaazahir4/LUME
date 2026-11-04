@@ -53,6 +53,10 @@
 }
 
 .header-product-card {
+  border: 1px solid #ead6d2;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #fff;
   cursor: pointer;
   transition: 0.4s ease;
 }
